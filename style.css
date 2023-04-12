@@ -81,7 +81,7 @@ body {
 }
 .plan-description h2 {
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0 0 0.2rem 0;
 }
 .plan-description p {
@@ -97,7 +97,7 @@ body {
 }
 .plan a:hover{
     color: var(--clr-darkblue);
-    opacity: .8;
+    opacity: .9;
     text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ body {
   box-shadow: 3px 6px 1rem #0000004a;
 
   color: #ffffff;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 700;
 
   cursor: pointer;
