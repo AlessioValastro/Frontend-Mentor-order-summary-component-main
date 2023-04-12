@@ -1,0 +1,147 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* ! primary */
+  --clr-paleblue: hsl(225, 100%, 94%);
+  --clr-brightblue: hsl(245, 75%, 52%);
+  /* ! secondary */
+  --clr-verypaleblue: hsl(225, 100%, 98%);
+  --clr-desaturatedblue: hsl(224, 23%, 55%);
+  --clr-darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+  background: var(--clr-paleblue);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.container {
+  background: #ffffff;
+  width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.container img {
+  width: 100%;
+}
+.content {
+  padding: 1rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  opacity: 0.9;
+
+  margin: 1rem;
+}
+.intro p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+.plan {
+  background: var(--clr-verypaleblue);
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.1rem;
+
+  display: flex;
+  align-items: center;
+}
+.plan img {
+  width: 45px;
+}
+.plan-description {
+  margin-left: 1rem;
+}
+.plan-description h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0 0 0.2rem 0;
+}
+.plan-description p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.7;
+}
+.plan a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: end;
+}
+.plan a:hover{
+    color: var(--clr-darkblue);
+    opacity: .8;
+    text-decoration: none;
+}
+
+.buttons {
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem 0 1.3rem;
+}
+.buttons button {
+  background: var(--clr-brightblue);
+  width: 100%;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 3px 6px 1rem #0000004a;
+
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+.buttons button:hover{
+    opacity: .7;
+
+}
+.buttons a {
+  font-size: 1rem;
+  font-weight: 700;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+.buttons a:hover{
+    color: var(--clr-darkblue);
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container{
+    width: 90%;
+  }
+  .content{
+    padding: 1rem 1.5rem;
+  }
+}
